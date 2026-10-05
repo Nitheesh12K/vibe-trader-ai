@@ -1,10 +1,86 @@
+# ==============================================================================
+# VIBE TRADER AI - PRODUCTION & RESEARCH ENVIRONMENT DEPENDENCIES
+# ==============================================================================
+
+# Core Application & API Server
 fastapi>=0.110.0
 uvicorn[standard]>=0.29.0
-pydantic>=2.6.0
-pydantic-settings>=2.2.0
+pydantic>=2.10.0
+pydantic-settings>=2.8.0
 sqlalchemy>=2.0.28
 python-dotenv>=1.0.1
-pytest>=8.1.0
 httpx>=0.27.0
 numpy>=1.26.0
 pandas>=2.2.0
+xgboost>=3.4.0
+
+# Testing & Verification
+pytest>=8.1.0
+
+# ------------------------------------------------------------------------------
+# 20 Research & Performance Dependency Categories
+# ------------------------------------------------------------------------------
+
+# 1. High-Performance Tabular Analysis & Quant TA
+polars>=1.44.0
+polars-ta>=0.5.17
+
+# 2. Embedded In-Memory OLAP Database
+duckdb>=1.5.0
+
+# 3. Vectorized Quantitative Backtesting Engine
+vectorbt>=1.1.0
+
+# 4. Data Validation (Satisfied by pydantic and pydantic-settings above)
+
+# 5. Advanced Task Scheduling & Storage
+apscheduler>=3.11.0
+
+# 6. In-Memory Key-Value Caching & Messaging
+redis>=8.1.0
+
+# 7. Time-Series Storage Connectors (TimescaleDB / PostgreSQL & QuestDB)
+asyncpg>=0.31.0
+psycopg2-binary>=2.9.10
+questdb>=5.0.0
+
+# 8. Agentic Orchestration & Local LLM Tool Binding
+langgraph>=1.2.0
+langchain-ollama>=1.1.0
+langchain-core>=1.6.0
+
+# 9 & 18. Financial NLP, Sentiment & Hugging Face Transformers (FinBERT)
+transformers>=5.18.0
+tokenizers>=0.23.0
+accelerate>=1.15.0
+
+# 10. Dataflow & Pipeline Orchestration
+prefect>=3.8.0
+
+# 11 & 12. Apache Arrow, Streaming Backend & Flight Data Serialization
+pyarrow>=25.0.0
+
+# 13. JIT Code Compilation & Array Acceleration
+numba>=0.68.0
+
+# 14. Technical Analysis Native Library
+ta-lib>=0.8.0
+
+# 15. Hyperparameter Optimization & Search
+optuna>=5.0.0
+
+# 16. Gradient Boosted Decision Trees
+lightgbm>=4.7.0
+
+# 17. Deep Learning Tensor Framework
+torch>=2.14.0
+
+# 19. Deep Reinforcement Learning for Algorithmic Trading
+gymnasium>=1.3.0
+stable-baselines3>=2.9.0
+
+# 20. Machine Learning Experiment & Model Lifecycle Tracking
+mlflow>=3.16.0
+
+# Windows MSVC runtime companion (guarantees C++ runtime parity across C-extensions)
+msvc-runtime>=14.44.35112; sys_platform == 'win32'
