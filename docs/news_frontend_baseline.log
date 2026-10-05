@@ -1,0 +1,47 @@
+
+> vibe-trader-ai-frontend@0.1.0 test
+> vitest --run
+
+
+ RUN  v2.1.9 D:/nitheesh/vibe-trader-ai/frontend
+
+ ✓ src/SafeMarkdown.test.tsx (6 tests) 180ms
+stderr | src/MarketAssistantChat.test.tsx > MarketAssistantChat Component > shows a retry after failure and closes reliably
+Chat error: Error: Service unavailable
+    at D:\nitheesh\vibe-trader-ai\frontend\src\MarketAssistantChat.test.tsx:31:56
+    at file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:146:14
+    at file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:533:11
+    at runWithTimeout (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:39:7)
+    at runTest (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1056:17)
+    at runSuite (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1205:15)
+    at runSuite (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1205:15)
+    at runFiles (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1262:5)
+    at startTests (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1271:3)
+    at file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11
+
+stderr | src/MarketAssistantChat.test.tsx > MarketAssistantChat Component > shows a retry after failure and closes reliably
+Chat error: Error: Service unavailable
+    at D:\nitheesh\vibe-trader-ai\frontend\src\MarketAssistantChat.test.tsx:31:56
+    at file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:146:14
+    at file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:533:11
+    at runWithTimeout (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:39:7)
+    at runTest (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1056:17)
+    at runSuite (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1205:15)
+    at runSuite (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1205:15)
+    at runFiles (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1262:5)
+    at startTests (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1271:3)
+    at file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11
+
+ ✓ src/MarketAssistantChat.test.tsx (6 tests) 559ms
+ ✓ src/XGBoostResearch.test.tsx (5 tests) 1359ms
+   ✓ XGBoostResearchView > handles training workflow with parameter inputs 403ms
+   ✓ XGBoostResearchView > handles advisory next-bar prediction and shows probability meter 422ms
+ ✓ src/ProductCompletion.test.tsx (10 tests) 1158ms
+ ✓ src/App.test.tsx (18 tests) 2108ms
+   ✓ Vibe Trader AI App — Phase 2 & Technical Analysis Views > renders overview dashboard with live status and metrics 333ms
+
+ Test Files  5 passed (5)
+      Tests  45 passed (45)
+   Start at  17:12:11
+   Duration  9.41s (transform 2.13s, setup 2.16s, collect 5.41s, tests 5.36s, environment 11.20s, prepare 8.60s)
+

@@ -1,0 +1,436 @@
+{
+  "mode": "real router/tools/SQLite; mocked Ollama offline",
+  "runs": 10,
+  "results": {
+    "Hi": {
+      "median_ms": 1.1184001341462135,
+      "p95_ms": 18.02799990400672,
+      "samples": [
+        {
+          "wall_ms": 18.02799990400672,
+          "route_ms": 0.03,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.0,
+          "intent": "GREETING"
+        },
+        {
+          "wall_ms": 1.6562999226152897,
+          "route_ms": 0.0,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.0,
+          "intent": "GREETING"
+        },
+        {
+          "wall_ms": 1.1760001070797443,
+          "route_ms": 0.0,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.0,
+          "intent": "GREETING"
+        },
+        {
+          "wall_ms": 1.9441996701061726,
+          "route_ms": 0.01,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.0,
+          "intent": "GREETING"
+        },
+        {
+          "wall_ms": 1.1689001694321632,
+          "route_ms": 0.0,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.0,
+          "intent": "GREETING"
+        },
+        {
+          "wall_ms": 1.0679000988602638,
+          "route_ms": 0.0,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.0,
+          "intent": "GREETING"
+        },
+        {
+          "wall_ms": 0.9297998622059822,
+          "route_ms": 0.0,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.0,
+          "intent": "GREETING"
+        },
+        {
+          "wall_ms": 0.9141997434198856,
+          "route_ms": 0.0,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.0,
+          "intent": "GREETING"
+        },
+        {
+          "wall_ms": 0.9150998666882515,
+          "route_ms": 0.0,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.0,
+          "intent": "GREETING"
+        },
+        {
+          "wall_ms": 0.9066998027265072,
+          "route_ms": 0.0,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.0,
+          "intent": "GREETING"
+        }
+      ]
+    },
+    "What is stock market?": {
+      "median_ms": 1.4627000782638788,
+      "p95_ms": 2.439300063997507,
+      "samples": [
+        {
+          "wall_ms": 2.3134001530706882,
+          "route_ms": 0.38,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.04,
+          "intent": "EDUCATIONAL"
+        },
+        {
+          "wall_ms": 1.842699944972992,
+          "route_ms": 0.06,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.04,
+          "intent": "EDUCATIONAL"
+        },
+        {
+          "wall_ms": 1.404500100761652,
+          "route_ms": 0.06,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.03,
+          "intent": "EDUCATIONAL"
+        },
+        {
+          "wall_ms": 1.4228001236915588,
+          "route_ms": 0.05,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.03,
+          "intent": "EDUCATIONAL"
+        },
+        {
+          "wall_ms": 2.439300063997507,
+          "route_ms": 0.13,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.04,
+          "intent": "EDUCATIONAL"
+        },
+        {
+          "wall_ms": 1.5026000328361988,
+          "route_ms": 0.06,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.03,
+          "intent": "EDUCATIONAL"
+        },
+        {
+          "wall_ms": 1.3778000138700008,
+          "route_ms": 0.05,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.03,
+          "intent": "EDUCATIONAL"
+        },
+        {
+          "wall_ms": 1.3307002373039722,
+          "route_ms": 0.05,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.03,
+          "intent": "EDUCATIONAL"
+        },
+        {
+          "wall_ms": 1.3533001765608788,
+          "route_ms": 0.05,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.03,
+          "intent": "EDUCATIONAL"
+        },
+        {
+          "wall_ms": 1.6676997765898705,
+          "route_ms": 0.05,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.03,
+          "intent": "EDUCATIONAL"
+        }
+      ]
+    },
+    "Explain RSI": {
+      "median_ms": 1.53114995919168,
+      "p95_ms": 2.7407999150455,
+      "samples": [
+        {
+          "wall_ms": 1.6079000197350979,
+          "route_ms": 0.07,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.04,
+          "intent": "EDUCATIONAL"
+        },
+        {
+          "wall_ms": 1.4369003474712372,
+          "route_ms": 0.04,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.04,
+          "intent": "EDUCATIONAL"
+        },
+        {
+          "wall_ms": 1.5289001166820526,
+          "route_ms": 0.04,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.02,
+          "intent": "EDUCATIONAL"
+        },
+        {
+          "wall_ms": 2.7407999150455,
+          "route_ms": 0.11,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.05,
+          "intent": "EDUCATIONAL"
+        },
+        {
+          "wall_ms": 1.6248999163508415,
+          "route_ms": 0.06,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.03,
+          "intent": "EDUCATIONAL"
+        },
+        {
+          "wall_ms": 1.4343000948429108,
+          "route_ms": 0.05,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.02,
+          "intent": "EDUCATIONAL"
+        },
+        {
+          "wall_ms": 1.3364995829761028,
+          "route_ms": 0.04,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.02,
+          "intent": "EDUCATIONAL"
+        },
+        {
+          "wall_ms": 1.6872999258339405,
+          "route_ms": 0.06,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.02,
+          "intent": "EDUCATIONAL"
+        },
+        {
+          "wall_ms": 1.5333998017013073,
+          "route_ms": 0.06,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.02,
+          "intent": "EDUCATIONAL"
+        },
+        {
+          "wall_ms": 1.4204001054167747,
+          "route_ms": 0.05,
+          "tools": 0,
+          "tool_ms": 0.0,
+          "inference_ms": 0.02,
+          "intent": "EDUCATIONAL"
+        }
+      ]
+    },
+    "What's happening in NIFTY right now?": {
+      "median_ms": 12.146800057962537,
+      "p95_ms": 193.61269986256957,
+      "samples": [
+        {
+          "wall_ms": 193.61269986256957,
+          "route_ms": 0.04,
+          "tools": 5,
+          "tool_ms": 191.64,
+          "inference_ms": 0.06,
+          "intent": "INSTRUMENT_ANALYSIS"
+        },
+        {
+          "wall_ms": 11.118399910628796,
+          "route_ms": 0.04,
+          "tools": 5,
+          "tool_ms": 8.73,
+          "inference_ms": 0.1,
+          "intent": "INSTRUMENT_ANALYSIS"
+        },
+        {
+          "wall_ms": 10.494899936020374,
+          "route_ms": 0.05,
+          "tools": 5,
+          "tool_ms": 8.61,
+          "inference_ms": 0.04,
+          "intent": "INSTRUMENT_ANALYSIS"
+        },
+        {
+          "wall_ms": 11.9782998226583,
+          "route_ms": 0.04,
+          "tools": 5,
+          "tool_ms": 10.0,
+          "inference_ms": 0.05,
+          "intent": "INSTRUMENT_ANALYSIS"
+        },
+        {
+          "wall_ms": 12.315300293266773,
+          "route_ms": 0.05,
+          "tools": 5,
+          "tool_ms": 10.34,
+          "inference_ms": 0.05,
+          "intent": "INSTRUMENT_ANALYSIS"
+        },
+        {
+          "wall_ms": 10.832000058144331,
+          "route_ms": 0.05,
+          "tools": 5,
+          "tool_ms": 9.22,
+          "inference_ms": 0.04,
+          "intent": "INSTRUMENT_ANALYSIS"
+        },
+        {
+          "wall_ms": 12.466700281947851,
+          "route_ms": 0.04,
+          "tools": 5,
+          "tool_ms": 10.06,
+          "inference_ms": 0.06,
+          "intent": "INSTRUMENT_ANALYSIS"
+        },
+        {
+          "wall_ms": 12.497099582105875,
+          "route_ms": 0.05,
+          "tools": 5,
+          "tool_ms": 10.44,
+          "inference_ms": 0.04,
+          "intent": "INSTRUMENT_ANALYSIS"
+        },
+        {
+          "wall_ms": 45.68909993395209,
+          "route_ms": 0.04,
+          "tools": 5,
+          "tool_ms": 43.72,
+          "inference_ms": 0.05,
+          "intent": "INSTRUMENT_ANALYSIS"
+        },
+        {
+          "wall_ms": 10.824600234627724,
+          "route_ms": 0.04,
+          "tools": 5,
+          "tool_ms": 9.21,
+          "inference_ms": 0.04,
+          "intent": "INSTRUMENT_ANALYSIS"
+        }
+      ]
+    },
+    "Why did our strategy generate a BUY signal?": {
+      "median_ms": 11.911150068044662,
+      "p95_ms": 12.737700249999762,
+      "samples": [
+        {
+          "wall_ms": 12.02020002529025,
+          "route_ms": 0.02,
+          "tools": 3,
+          "tool_ms": 10.17,
+          "inference_ms": 0.04,
+          "intent": "STRATEGY_EXPLANATION"
+        },
+        {
+          "wall_ms": 11.68400002643466,
+          "route_ms": 0.02,
+          "tools": 3,
+          "tool_ms": 9.85,
+          "inference_ms": 0.04,
+          "intent": "STRATEGY_EXPLANATION"
+        },
+        {
+          "wall_ms": 11.043200269341469,
+          "route_ms": 0.1,
+          "tools": 3,
+          "tool_ms": 9.33,
+          "inference_ms": 0.03,
+          "intent": "STRATEGY_EXPLANATION"
+        },
+        {
+          "wall_ms": 12.265199795365334,
+          "route_ms": 0.03,
+          "tools": 3,
+          "tool_ms": 9.68,
+          "inference_ms": 0.04,
+          "intent": "STRATEGY_EXPLANATION"
+        },
+        {
+          "wall_ms": 12.737700249999762,
+          "route_ms": 0.02,
+          "tools": 3,
+          "tool_ms": 10.83,
+          "inference_ms": 0.04,
+          "intent": "STRATEGY_EXPLANATION"
+        },
+        {
+          "wall_ms": 12.438199948519468,
+          "route_ms": 0.02,
+          "tools": 3,
+          "tool_ms": 10.35,
+          "inference_ms": 0.05,
+          "intent": "STRATEGY_EXPLANATION"
+        },
+        {
+          "wall_ms": 10.588999837636948,
+          "route_ms": 0.02,
+          "tools": 3,
+          "tool_ms": 9.04,
+          "inference_ms": 0.03,
+          "intent": "STRATEGY_EXPLANATION"
+        },
+        {
+          "wall_ms": 11.871099937707186,
+          "route_ms": 0.02,
+          "tools": 3,
+          "tool_ms": 10.08,
+          "inference_ms": 0.04,
+          "intent": "STRATEGY_EXPLANATION"
+        },
+        {
+          "wall_ms": 11.95120019838214,
+          "route_ms": 0.02,
+          "tools": 3,
+          "tool_ms": 10.03,
+          "inference_ms": 0.04,
+          "intent": "STRATEGY_EXPLANATION"
+        },
+        {
+          "wall_ms": 11.566400062292814,
+          "route_ms": 0.02,
+          "tools": 3,
+          "tool_ms": 9.09,
+          "inference_ms": 0.03,
+          "intent": "STRATEGY_EXPLANATION"
+        }
+      ]
+    }
+  }
+}

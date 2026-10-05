@@ -1,0 +1,679 @@
+2026-10-04 18:03:07,253 [DEBUG] asyncio: Using proactor: IocpProactor
+INFO:     Started server process [86268]
+INFO:     Waiting for application startup.
+2026-10-04 18:03:07,310 [INFO] vibe-trader-ai: Starting up Vibe Trader AI backend...
+2026-10-04 18:03:07,310 [INFO] vibe-trader-ai: Environment: development
+2026-10-04 18:03:07,310 [INFO] vibe-trader-ai: Configured CORS origins: ['http://localhost:5173', 'http://127.0.0.1:5173']
+2026-10-04 18:03:07,479 [INFO] vibe-trader-ai: Database initialized successfully.
+2026-10-04 18:03:07,481 [INFO] vibe-trader-ai: Triggered asynchronous background warm-up for local Qwen model.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-10-04 18:03:07,896 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=45.0 socket_options=None
+2026-10-04 18:03:07,918 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000016688E38500>
+2026-10-04 18:03:07,919 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-10-04 18:03:07,920 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:03:07,920 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-10-04 18:03:07,920 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:03:07,920 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-10-04 18:03:07,929 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:33:07 GMT'), (b'Content-Length', b'121')])
+2026-10-04 18:03:07,929 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-10-04 18:03:07,929 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-10-04 18:03:07,930 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:03:07,930 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:03:07,930 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:03:07,930 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:03:07,930 [DEBUG] httpcore.connection: close.complete
+2026-10-04 18:03:07,931 [INFO] vibe-trader-ai.market_assistant: Ollama model qwen3-local:latest preloaded into RAM.
+INFO:     127.0.0.1:62740 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63522 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63522 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62740 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57835 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60256 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60256 - "OPTIONS /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57835 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60256 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60195 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64951 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64951 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60195 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52994 - "OPTIONS /api/risk/settings HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61020 - "OPTIONS /api/broker/zerodha/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52994 - "OPTIONS /api/assistant/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59497 - "OPTIONS /api/assistant/history/sess-mutszim3-ku12l HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52465 - "OPTIONS /api/market/demo HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53277 - "OPTIONS /api/paper-trades?page=1&page_size=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56951 - "OPTIONS /api/strategies?page=1&page_size=10&is_active=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61020 - "OPTIONS /api/proposals?status=PENDING HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52994 - "OPTIONS /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59497 - "OPTIONS /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53277 - "OPTIONS /api/risk/settings HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61020 - "OPTIONS /api/broker/zerodha/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56951 - "OPTIONS /api/assistant/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52465 - "OPTIONS /api/assistant/history/sess-mutszim3-ku12l HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52994 - "OPTIONS /api/market/demo HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59497 - "OPTIONS /api/paper-trades?page=1&page_size=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53277 - "OPTIONS /api/strategies?page=1&page_size=10&is_active=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61020 - "OPTIONS /api/proposals?status=PENDING HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56951 - "OPTIONS /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52465 - "OPTIONS /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59497 - "GET /api/broker/zerodha/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52994 - "GET /api/risk/settings HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61020 - "GET /api/assistant/history/sess-mutszim3-ku12l HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52465 - "GET /api/paper-trades?page=1&page_size=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59497 - "GET /api/strategies?page=1&page_size=10&is_active=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56951 - "GET /api/market/demo HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52994 - "GET /api/proposals?status=PENDING HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59497 - "GET /api/broker/zerodha/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61020 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52465 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52994 - "GET /api/assistant/history/sess-mutszim3-ku12l HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52465 - "GET /api/market/demo HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56951 - "GET /api/risk/settings HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61020 - "GET /api/strategies?page=1&page_size=10&is_active=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59497 - "GET /api/paper-trades?page=1&page_size=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61020 - "OPTIONS /api/market/ohlc/NIFTY%2050?timeframe=1D HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52994 - "GET /api/proposals?status=PENDING HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52465 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56951 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56951 - "GET /api/market/ohlc/NIFTY%2050?timeframe=1D HTTP/1.1" 200 OK
+2026-10-04 18:04:46,687 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:04:46,690 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000016689237B60>
+2026-10-04 18:04:46,691 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:04:46,691 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:04:46,692 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:04:46,693 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:04:46,693 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:04:46,720 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:34:46 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:04:46,722 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:04:46,723 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:04:46,724 [DEBUG] httpcore.http11: receive_response_body.complete
+INFO:     127.0.0.1:53277 - "GET /api/assistant/status HTTP/1.1" 200 OK
+2026-10-04 18:04:46,724 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:04:46,724 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:04:46,725 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:04:46,726 [DEBUG] httpcore.connection: close.complete
+2026-10-04 18:04:47,483 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:04:47,488 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000016689132060>
+2026-10-04 18:04:47,489 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:04:47,491 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:04:47,491 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:04:47,492 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:04:47,492 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:04:47,509 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:34:47 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:04:47,509 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:04:47,510 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:04:47,510 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:04:47,510 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:04:47,510 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:04:47,511 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:04:47,511 [DEBUG] httpcore.connection: close.complete
+INFO:     127.0.0.1:56951 - "GET /api/assistant/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54985 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57251 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58332 - "OPTIONS /api/assistant/chat HTTP/1.1" 200 OK
+2026-10-04 18:05:01,813 [INFO] vibe-trader-ai.market_assistant: AI Assistant intent detected: NEWS_CURRENT in 1.21ms 
+2026-10-04 18:05:01,822 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=2 socket_options=None
+2026-10-04 18:05:01,823 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000166892BA9C0>
+2026-10-04 18:05:01,823 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-10-04 18:05:01,823 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:05:01,823 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-10-04 18:05:01,823 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:05:01,823 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-10-04 18:05:02,374 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Alt-Svc', b'h3=":443"; ma=2592000'), (b'Content-Type', b'application/json'), (b'Date', b'Sun, 04 Oct 2026 12:35:02 GMT'), (b'Retry-After', b'1498'), (b'Server', b'Google Frontend'), (b'Traceparent', b'00-102f4c9f55912351ec1664c0bbeea398-afc985fce90b7ccb-00'), (b'Via', b'1.1 google'), (b'X-Build-Commit', b'ed9112fc42821319c1647b0ab20f48bc26d627a8'), (b'X-Build-Time', b'2026-10-03T09:26:30-07:00'), (b'X-Cloud-Trace-Context', b'102f4c9f55912351ec1664c0bbeea398/12666802748244327627'), (b'X-Frame-Options', b'DENY'), (b'X-Request-Id', b'bdc8a7fd-f822-4cdc-b9cf-5696609b2a69'), (b'Transfer-Encoding', b'chunked')])
+2026-10-04 18:05:02,375 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/experimental/web_search "HTTP/1.1 429 Too Many Requests"
+2026-10-04 18:05:02,375 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:05:02,377 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:05:02,382 [INFO] vibe-trader-ai.market_assistant: Tool execution completed in 568.85ms with 1 sources.
+INFO:     127.0.0.1:58332 - "POST /api/assistant/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62819 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51874 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54380 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51613 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55069 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53072 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55196 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52533 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53769 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50184 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52335 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57517 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57006 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58653 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61425 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51366 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51116 - "GET /api/assistant/history/sess-mutszim3-ku12l HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65208 - "OPTIONS /api/assistant/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62711 - "OPTIONS /api/assistant/history/sess-mutowu8s-s9ibd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65208 - "GET /api/assistant/history/sess-mutowu8s-s9ibd HTTP/1.1" 200 OK
+2026-10-04 18:07:08,884 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:07:08,887 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000166893425A0>
+2026-10-04 18:07:08,887 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:07:08,887 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:07:08,887 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:07:08,887 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:07:08,887 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:07:08,893 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:07:08,895 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000016689342F90>
+2026-10-04 18:07:08,896 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:07:08,901 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:07:08,902 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:07:08,903 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:07:08,903 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:07:08,913 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:37:08 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:07:08,914 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:07:08,914 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:07:08,914 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:07:08,914 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:07:08,915 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:37:08 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:07:08,915 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:07:08,916 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:07:08,917 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:07:08,918 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:07:08,919 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:07:08,919 [DEBUG] httpcore.connection: close.complete
+2026-10-04 18:07:08,920 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:07:08,921 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:07:08,922 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:07:08,922 [DEBUG] httpcore.connection: close.complete
+INFO:     127.0.0.1:62711 - "GET /api/assistant/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54359 - "GET /api/assistant/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51116 - "GET /api/assistant/history/sess-mutszim3-ku12l HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52744 - "GET /api/market/demo HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59255 - "GET /api/proposals?status=PENDING HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62649 - "GET /api/strategies?page=1&page_size=10&is_active=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50334 - "GET /api/paper-trades?page=1&page_size=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51116 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52744 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59255 - "GET /api/assistant/history/sess-mutszim3-ku12l HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50334 - "GET /api/proposals?status=PENDING HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62649 - "GET /api/market/demo HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51116 - "GET /api/strategies?page=1&page_size=10&is_active=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52744 - "GET /api/paper-trades?page=1&page_size=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59255 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50334 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62649 - "GET /api/market/ohlc/NIFTY%2050?timeframe=1D HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62649 - "GET /api/market/ohlc/NIFTY%2050?timeframe=1D HTTP/1.1" 200 OK
+2026-10-04 18:07:12,257 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:07:12,260 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000016689137530>
+2026-10-04 18:07:12,260 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:07:12,261 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:07:12,261 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:07:12,261 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:07:12,261 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:07:12,278 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:37:12 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:07:12,278 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:07:12,279 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:07:12,279 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:07:12,279 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:07:12,279 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:07:12,279 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:07:12,279 [DEBUG] httpcore.connection: close.complete
+INFO:     127.0.0.1:54359 - "GET /api/assistant/status HTTP/1.1" 200 OK
+2026-10-04 18:07:12,660 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:07:12,661 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000016689359940>
+2026-10-04 18:07:12,661 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:07:12,661 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:07:12,661 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:07:12,661 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:07:12,661 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:07:12,675 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:37:12 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:07:12,676 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:07:12,676 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:07:12,676 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:07:12,676 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:07:12,676 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:07:12,676 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:07:12,676 [DEBUG] httpcore.connection: close.complete
+INFO:     127.0.0.1:62649 - "GET /api/assistant/status HTTP/1.1" 200 OK
+2026-10-04 18:07:15,709 [INFO] vibe-trader-ai.market_assistant: AI Assistant intent detected: NEWS_SUMMARY in 0.01ms 
+2026-10-04 18:07:15,709 [INFO] vibe-trader-ai.market_assistant: Tool execution completed in 0.25ms with 1 sources.
+2026-10-04 18:07:16,055 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:07:16,078 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000016689236CC0>
+2026-10-04 18:07:16,079 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:07:16,079 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:07:16,080 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:07:16,080 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:07:16,081 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:07:16,096 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:37:16 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:07:16,096 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:07:16,096 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:07:16,096 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:07:16,096 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:07:16,096 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:07:16,096 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:07:16,097 [DEBUG] httpcore.connection: close.complete
+2026-10-04 18:07:16,423 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=2.0 socket_options=None
+2026-10-04 18:07:16,434 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000166892BA2D0>
+2026-10-04 18:07:16,434 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-10-04 18:07:16,435 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:07:16,436 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-10-04 18:07:16,436 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:07:16,436 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+INFO:     127.0.0.1:57683 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49713 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50667 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54948 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+2026-10-04 18:07:49,635 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:37:49 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-10-04 18:07:49,636 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-10-04 18:07:49,636 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-10-04 18:07:49,637 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:07:49,637 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:07:49,637 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:07:49,645 [INFO] vibe-trader-ai.market_assistant: Ollama assistant response received (qwen3-local:latest)
+INFO:     127.0.0.1:59259 - "POST /api/assistant/chat HTTP/1.1" 200 OK
+2026-10-04 18:07:49,674 [INFO] vibe-trader-ai.market_assistant: AI Assistant intent detected: NEWS_SUMMARY in 0.07ms 
+2026-10-04 18:07:49,675 [INFO] vibe-trader-ai.market_assistant: Tool execution completed in 0.63ms with 1 sources.
+2026-10-04 18:07:50,181 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:07:50,182 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000016689359820>
+2026-10-04 18:07:50,182 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:07:50,184 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:07:50,184 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:07:50,184 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:07:50,184 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:07:50,201 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:37:50 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:07:50,201 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:07:50,201 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:07:50,202 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:07:50,202 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:07:50,202 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:07:50,202 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:07:50,203 [DEBUG] httpcore.connection: close.complete
+2026-10-04 18:07:50,206 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-10-04 18:07:50,207 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:07:50,208 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-10-04 18:07:50,208 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:07:50,208 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+INFO:     127.0.0.1:52985 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50060 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+2026-10-04 18:08:05,333 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:38:05 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-10-04 18:08:05,334 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-10-04 18:08:05,335 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-10-04 18:08:05,335 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:08:05,335 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:08:05,335 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:08:05,336 [INFO] vibe-trader-ai.market_assistant: Ollama assistant response received (qwen3-local:latest)
+INFO:     127.0.0.1:59259 - "POST /api/assistant/chat HTTP/1.1" 200 OK
+2026-10-04 18:08:05,361 [INFO] vibe-trader-ai.market_assistant: AI Assistant intent detected: NEWS_SUMMARY in 0.06ms 
+2026-10-04 18:08:05,362 [INFO] vibe-trader-ai.market_assistant: Tool execution completed in 0.86ms with 1 sources.
+2026-10-04 18:08:05,832 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:08:05,833 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000166893437D0>
+2026-10-04 18:08:05,833 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:08:05,833 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:08:05,834 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:08:05,834 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:08:05,835 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:08:05,851 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:38:05 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:08:05,852 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:08:05,852 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:08:05,853 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:08:05,853 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:08:05,853 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:08:05,853 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:08:05,854 [DEBUG] httpcore.connection: close.complete
+2026-10-04 18:08:05,856 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-10-04 18:08:05,856 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:08:05,856 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-10-04 18:08:05,857 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:08:05,857 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+INFO:     127.0.0.1:61381 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62918 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+2026-10-04 18:08:20,351 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:38:20 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-10-04 18:08:20,351 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-10-04 18:08:20,351 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-10-04 18:08:20,351 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:08:20,351 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:08:20,352 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:08:20,352 [INFO] vibe-trader-ai.market_assistant: Ollama assistant response received (qwen3-local:latest)
+INFO:     127.0.0.1:59259 - "POST /api/assistant/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55183 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53274 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52927 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65300 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51489 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59059 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52693 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56864 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+2026-10-04 18:09:24,473 [INFO] vibe-trader-ai.market_assistant: AI Assistant intent detected: MARKET_NEWS_IMPACT in 0.04ms 
+2026-10-04 18:09:24,474 [INFO] vibe-trader-ai.market_assistant: Tool execution completed in 0.45ms with 1 sources.
+2026-10-04 18:09:25,466 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:09:25,468 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001668936E030>
+2026-10-04 18:09:25,468 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:09:25,468 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:09:25,468 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:09:25,469 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:09:25,469 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:09:25,486 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:39:25 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:09:25,487 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:09:25,487 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:09:25,488 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:09:25,488 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:09:25,488 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:09:25,489 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:09:25,490 [DEBUG] httpcore.connection: close.complete
+2026-10-04 18:09:25,491 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:09:25,493 [DEBUG] httpcore.connection: close.complete
+2026-10-04 18:09:25,493 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=2.0 socket_options=None
+2026-10-04 18:09:25,494 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001668936E5A0>
+2026-10-04 18:09:25,494 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-10-04 18:09:25,495 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:09:25,495 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-10-04 18:09:25,495 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:09:25,495 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+INFO:     127.0.0.1:65108 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61126 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53592 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64655 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58555 - "OPTIONS /api/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53640 - "OPTIONS /api/alerts/events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62848 - "OPTIONS /api/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61541 - "OPTIONS /api/alerts/events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62848 - "GET /api/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61541 - "GET /api/alerts/events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53640 - "GET /api/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62848 - "GET /api/alerts/events HTTP/1.1" 200 OK
+2026-10-04 18:09:59,736 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:39:59 GMT'), (b'Transfer-Encoding', b'chunked')])
+2026-10-04 18:09:59,736 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-10-04 18:09:59,736 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-10-04 18:09:59,736 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:09:59,736 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:09:59,736 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:09:59,745 [WARNING] vibe-trader-ai.market_assistant: Ollama inference failed or timed out: 1 validation error for NewsAnalysis
+possible_market_implications
+  Value error, Quantitative news claims belong in retrieved evidence [type=value_error, input_value='Nifty may face further d...usand-six-hundred level', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error; triggering deterministic fallback.
+INFO:     127.0.0.1:56866 - "POST /api/assistant/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52761 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53949 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53949 - "OPTIONS /api/analysis/ai/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52761 - "OPTIONS /api/analysis/ai/evaluate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50150 - "OPTIONS /api/analysis/ai/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53949 - "OPTIONS /api/analysis/ai/evaluate HTTP/1.1" 200 OK
+2026-10-04 18:10:02,222 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:10:02,223 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001668911EA50>
+2026-10-04 18:10:02,223 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:02,224 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:10:02,224 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:10:02,224 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:10:02,225 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:02,244 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:40:02 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:10:02,245 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:10:02,245 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:10:02,246 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:10:02,246 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:10:02,246 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:10:02,246 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:10:02,247 [DEBUG] httpcore.connection: close.complete
+INFO:     127.0.0.1:50150 - "GET /api/analysis/ai/status HTTP/1.1" 200 OK
+2026-10-04 18:10:02,564 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:10:02,565 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001668936DAC0>
+2026-10-04 18:10:02,565 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:02,566 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:10:02,566 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:10:02,566 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:10:02,567 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:02,573 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:10:02,575 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001668936D160>
+2026-10-04 18:10:02,575 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:02,576 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:10:02,577 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:10:02,577 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:10:02,577 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:02,578 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:40:02 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:10:02,578 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:10:02,579 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:10:02,579 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:10:02,579 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:10:02,579 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:10:02,579 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:10:02,579 [DEBUG] httpcore.connection: close.complete
+2026-10-04 18:10:02,590 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:40:02 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:10:02,590 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:10:02,590 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:10:02,591 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:10:02,591 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:10:02,591 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:10:02,591 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:10:02,592 [DEBUG] httpcore.connection: close.complete
+2026-10-04 18:10:03,344 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:10:03,347 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001668935A750>
+2026-10-04 18:10:03,347 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:03,347 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:10:03,349 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:10:03,350 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:10:03,351 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:03,362 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:40:03 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:10:03,362 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:10:03,362 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:10:03,363 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:10:03,363 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:10:03,363 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:10:03,363 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:10:03,365 [DEBUG] httpcore.connection: close.complete
+INFO:     127.0.0.1:51145 - "GET /api/analysis/ai/status HTTP/1.1" 200 OK
+2026-10-04 18:10:03,609 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=10.0 socket_options=None
+2026-10-04 18:10:03,611 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=10.0 socket_options=None
+2026-10-04 18:10:03,611 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000166892BAB40>
+2026-10-04 18:10:03,611 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-10-04 18:10:03,612 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:10:03,612 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-10-04 18:10:03,612 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001668935ADB0>
+2026-10-04 18:10:03,613 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-10-04 18:10:03,613 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:10:03,613 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-10-04 18:10:03,613 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:10:03,613 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:10:03,614 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-10-04 18:10:03,614 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-10-04 18:10:03,622 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 404, b'Not Found', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:40:03 GMT'), (b'Content-Length', b'43')])
+2026-10-04 18:10:03,622 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 404 Not Found"
+2026-10-04 18:10:03,622 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-10-04 18:10:03,623 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:10:03,623 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:10:03,623 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:10:03,624 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:10:03,625 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 404, b'Not Found', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:40:03 GMT'), (b'Content-Length', b'43')])
+2026-10-04 18:10:03,625 [DEBUG] httpcore.connection: close.complete
+2026-10-04 18:10:03,626 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 404 Not Found"
+2026-10-04 18:10:03,626 [WARNING] vibe-trader-ai.ai_provider: Ollama generation failed (Ollama returned HTTP 404: {"error":"model 'llama3:latest' not found"}), falling back to deterministic analyzer.
+2026-10-04 18:10:03,627 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+INFO:     127.0.0.1:52761 - "POST /api/analysis/ai/evaluate HTTP/1.1" 200 OK
+2026-10-04 18:10:03,629 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:10:03,631 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:10:03,631 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:10:03,632 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:10:03,632 [DEBUG] httpcore.connection: close.complete
+2026-10-04 18:10:03,633 [WARNING] vibe-trader-ai.ai_provider: Ollama generation failed (Ollama returned HTTP 404: {"error":"model 'llama3:latest' not found"}), falling back to deterministic analyzer.
+INFO:     127.0.0.1:53949 - "POST /api/analysis/ai/evaluate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55259 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53480 - "OPTIONS /api/analysis/ai/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53681 - "OPTIONS /api/analysis/ai/evaluate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61082 - "OPTIONS /api/analysis/ai/evaluate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53480 - "OPTIONS /api/analysis/ai/status HTTP/1.1" 200 OK
+2026-10-04 18:10:18,068 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:10:18,069 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001668935AC90>
+2026-10-04 18:10:18,070 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:18,070 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:10:18,070 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:10:18,070 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:10:18,070 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:18,083 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:40:18 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:10:18,083 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:10:18,083 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:10:18,083 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:10:18,083 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:10:18,083 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:10:18,084 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:10:18,084 [DEBUG] httpcore.connection: close.complete
+INFO:     127.0.0.1:53480 - "GET /api/analysis/ai/status HTTP/1.1" 200 OK
+2026-10-04 18:10:18,108 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:10:18,112 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:10:18,114 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001668935A420>
+2026-10-04 18:10:18,114 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:18,114 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:10:18,114 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:10:18,114 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:10:18,114 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:18,123 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:40:18 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:10:18,124 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:10:18,124 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:10:18,124 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:10:18,124 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:10:18,124 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:10:18,124 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:10:18,124 [DEBUG] httpcore.connection: close.complete
+2026-10-04 18:10:18,129 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001668935B950>
+2026-10-04 18:10:18,129 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:18,129 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:10:18,130 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:10:18,130 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:10:18,130 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:18,139 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:40:18 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:10:18,139 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:10:18,139 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:10:18,139 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:10:18,139 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:10:18,139 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:10:18,140 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:10:18,140 [DEBUG] httpcore.connection: close.complete
+2026-10-04 18:10:18,628 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:10:18,647 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000166895BD100>
+2026-10-04 18:10:18,647 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:18,647 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:10:18,648 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:10:18,648 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:10:18,648 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:18,658 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:40:18 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:10:18,659 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:10:18,659 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:10:18,659 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:10:18,659 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:10:18,659 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:10:18,659 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:10:18,659 [DEBUG] httpcore.connection: close.complete
+INFO:     127.0.0.1:51984 - "GET /api/analysis/ai/status HTTP/1.1" 200 OK
+2026-10-04 18:10:18,661 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=10.0 socket_options=None
+2026-10-04 18:10:18,663 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001668936D4F0>
+2026-10-04 18:10:18,663 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-10-04 18:10:18,663 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:10:18,664 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-10-04 18:10:18,664 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:10:18,664 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-10-04 18:10:18,668 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 404, b'Not Found', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:40:18 GMT'), (b'Content-Length', b'43')])
+2026-10-04 18:10:18,668 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 404 Not Found"
+2026-10-04 18:10:18,668 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-10-04 18:10:18,668 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:10:18,668 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:10:18,668 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:10:18,669 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:10:18,669 [DEBUG] httpcore.connection: close.complete
+2026-10-04 18:10:18,669 [WARNING] vibe-trader-ai.ai_provider: Ollama generation failed (Ollama returned HTTP 404: {"error":"model 'llama3:latest' not found"}), falling back to deterministic analyzer.
+INFO:     127.0.0.1:61082 - "POST /api/analysis/ai/evaluate HTTP/1.1" 200 OK
+2026-10-04 18:10:18,679 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=10.0 socket_options=None
+2026-10-04 18:10:18,681 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000166892BA9C0>
+2026-10-04 18:10:18,681 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-10-04 18:10:18,682 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:10:18,682 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-10-04 18:10:18,682 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:10:18,682 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-10-04 18:10:18,687 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 404, b'Not Found', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:40:18 GMT'), (b'Content-Length', b'43')])
+2026-10-04 18:10:18,688 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 404 Not Found"
+2026-10-04 18:10:18,688 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-10-04 18:10:18,688 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:10:18,688 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:10:18,688 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:10:18,688 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:10:18,689 [DEBUG] httpcore.connection: close.complete
+2026-10-04 18:10:18,689 [WARNING] vibe-trader-ai.ai_provider: Ollama generation failed (Ollama returned HTTP 404: {"error":"model 'llama3:latest' not found"}), falling back to deterministic analyzer.
+INFO:     127.0.0.1:53681 - "POST /api/analysis/ai/evaluate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52247 - "GET /api/assistant/history/sess-mutszim3-ku12l HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65506 - "GET /api/proposals?status=PENDING HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54501 - "GET /api/market/demo HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55807 - "GET /api/paper-trades?page=1&page_size=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58350 - "GET /api/strategies?page=1&page_size=10&is_active=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55807 - "GET /api/proposals?status=PENDING HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52247 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54501 - "GET /api/assistant/history/sess-mutszim3-ku12l HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58350 - "GET /api/market/demo HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65506 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54501 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55807 - "GET /api/paper-trades?page=1&page_size=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52247 - "GET /api/strategies?page=1&page_size=10&is_active=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58350 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58350 - "GET /api/market/ohlc/NIFTY%2050?timeframe=1D HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58350 - "GET /api/market/ohlc/NIFTY%2050?timeframe=1D HTTP/1.1" 200 OK
+2026-10-04 18:10:24,537 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:10:24,541 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001668936FE00>
+2026-10-04 18:10:24,541 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:24,541 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:10:24,541 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:10:24,541 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:10:24,541 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:24,557 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:40:24 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:10:24,558 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:10:24,558 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:10:24,558 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:10:24,558 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:10:24,559 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:10:24,559 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:10:24,560 [DEBUG] httpcore.connection: close.complete
+INFO:     127.0.0.1:59567 - "GET /api/assistant/status HTTP/1.1" 200 OK
+2026-10-04 18:10:25,077 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:10:25,093 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000016689359F40>
+2026-10-04 18:10:25,093 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:25,093 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:10:25,093 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:10:25,093 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:10:25,094 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:10:25,106 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:40:25 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:10:25,106 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:10:25,106 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:10:25,106 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:10:25,106 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:10:25,106 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:10:25,107 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:10:25,107 [DEBUG] httpcore.connection: close.complete
+INFO:     127.0.0.1:58350 - "GET /api/assistant/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52343 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58313 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51157 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60192 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63420 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59989 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58615 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52756 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61004 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56865 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50743 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57279 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53501 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58199 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64234 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63378 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51578 - "OPTIONS /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55113 - "OPTIONS /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55113 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51578 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64552 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57873 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49900 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65324 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64444 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62294 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53551 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63145 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61126 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65396 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64414 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64049 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53806 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59869 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61000 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62668 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60148 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50521 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54293 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55963 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60941 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54278 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK

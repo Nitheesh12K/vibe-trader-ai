@@ -1,0 +1,70 @@
+{
+  "mode": "real Ollama warm sequential probes, streaming transport probe only",
+  "hardware": {
+    "cpu": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "logical_processors": 12,
+    "ram_cpu_utilization": "OS inventory access denied"
+  },
+  "loaded_models": {
+    "models": [
+      {
+        "name": "qwen3-local:latest",
+        "model": "qwen3-local:latest",
+        "size": 3184001022,
+        "digest": "a6ceb965ae795e994a6d106c6163880f09b5e8beb16e282034e906b3b2f981c1",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen3",
+          "families": [
+            "qwen3"
+          ],
+          "parameter_size": "4.0B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-10-04T17:34:25.7727955+05:30",
+        "size_vram": 0,
+        "context_length": 4096
+      }
+    ]
+  },
+  "model": "qwen3-local:latest",
+  "median_ms": 13671.889999881387,
+  "p95_ms": 23076.458299998194,
+  "runs": 3,
+  "samples": [
+    {
+      "wall_ms": 12124.432799872011,
+      "ttft_ms": 926.5053998678923,
+      "load_ms": 8.0908,
+      "prompt_eval_ms": 845.145,
+      "eval_ms": 11171.611,
+      "tokens": 44,
+      "tokens_per_second": 3.938554609536619,
+      "done_reason": "stop",
+      "answer": "The stock market is a system where companies raise capital by selling shares to investors, and investors buy shares to potentially earn profits from price increases or dividends. It consists of stock exchanges where buying and selling of stocks occur."
+    },
+    {
+      "wall_ms": 23076.458299998194,
+      "ttft_ms": 325.89920004829764,
+      "load_ms": 13.714,
+      "prompt_eval_ms": 278.106,
+      "eval_ms": 22684.024,
+      "tokens": 76,
+      "tokens_per_second": 3.3503755771021932,
+      "done_reason": "stop",
+      "answer": "The stock market is a system where companies raise capital by selling shares to investors, and investors buy shares to own a part of a company. It facilitates the buying and selling of stocks, which represent ownership in corporations. The stock market is divided into different segments, such as the New York Stock Exchange (NYSE) and NASDAQ, and is regulated to ensure transparency and fairness."
+    },
+    {
+      "wall_ms": 13671.889999881387,
+      "ttft_ms": 391.6690996848047,
+      "load_ms": 16.7171,
+      "prompt_eval_ms": 303.129,
+      "eval_ms": 13277.018,
+      "tokens": 44,
+      "tokens_per_second": 3.3139971641222448,
+      "done_reason": "stop",
+      "answer": "The stock market is a system where companies raise capital by selling shares to investors, and investors buy shares to potentially earn profits from price increases or dividends. It consists of stock exchanges where buying and selling of stocks occur."
+    }
+  ]
+}

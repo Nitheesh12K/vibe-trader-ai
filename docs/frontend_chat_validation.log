@@ -1,0 +1,69 @@
+
+> vibe-trader-ai-frontend@0.1.0 test
+> vitest --run
+
+
+ RUN  v2.1.9 D:/nitheesh/vibe-trader-ai/frontend
+
+ ✓ src/SafeMarkdown.test.tsx (6 tests) 824ms
+   ✓ SafeMarkdown Component > renders headings and bold text properly without raw symbols 438ms
+stderr | src/MarketAssistantChat.test.tsx > MarketAssistantChat Component > shows a retry after failure and closes reliably
+Chat error: Error: Service unavailable
+    at D:\nitheesh\vibe-trader-ai\frontend\src\MarketAssistantChat.test.tsx:31:56
+    at file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:146:14
+    at file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:533:11
+    at runWithTimeout (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:39:7)
+    at runTest (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1056:17)
+    at runSuite (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1205:15)
+    at runSuite (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1205:15)
+    at runFiles (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1262:5)
+    at startTests (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1271:3)
+    at file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11
+
+stderr | src/MarketAssistantChat.test.tsx > MarketAssistantChat Component > shows a retry after failure and closes reliably
+Chat error: Error: Service unavailable
+    at D:\nitheesh\vibe-trader-ai\frontend\src\MarketAssistantChat.test.tsx:31:56
+    at file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:146:14
+    at file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:533:11
+    at runWithTimeout (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:39:7)
+    at runTest (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1056:17)
+    at runSuite (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1205:15)
+    at runSuite (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1205:15)
+    at runFiles (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1262:5)
+    at startTests (file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/@vitest/runner/dist/index.js:1271:3)
+    at file:///D:/nitheesh/vibe-trader-ai/frontend/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11
+
+ ✓ src/MarketAssistantChat.test.tsx (6 tests) 1870ms
+   ✓ MarketAssistantChat Component > uses neutral loading for coding questions and prevents duplicate sends 542ms
+   ✓ MarketAssistantChat Component > sends user message and displays grounded assistant response with sources 635ms
+ ✓ src/XGBoostResearch.test.tsx (5 tests) 4341ms
+   ✓ XGBoostResearchView > renders research safety banner and non-negotiable notice 791ms
+   ✓ XGBoostResearchView > displays out-of-sample test metrics and naive baselines for selected model 394ms
+   ✓ XGBoostResearchView > handles training workflow with parameter inputs 1169ms
+   ✓ XGBoostResearchView > handles advisory next-bar prediction and shows probability meter 1171ms
+   ✓ XGBoostResearchView > handles Qwen advisory synthesis and warns on divergence 806ms
+ ✓ src/ProductCompletion.test.tsx (10 tests) 3546ms
+   ✓ Vibe Trader AI — Product Completion Upgrade Verification > renders WatchlistView with groups, instruments, and quick actions 591ms
+   ✓ Vibe Trader AI — Product Completion Upgrade Verification > renders AlertsView and evaluates trigger rules without trade execution 987ms
+   ✓ Vibe Trader AI — Product Completion Upgrade Verification > renders ReportExportView and validates export links and disclaimer security 400ms
+   ✓ Vibe Trader AI — Product Completion Upgrade Verification > renders SettingsCenterView and updates risk boundaries with confirmation modal 424ms
+ ✓ src/App.test.tsx (18 tests) 9144ms
+   ✓ Vibe Trader AI App — Phase 2 & Technical Analysis Views > renders overview dashboard with live status and metrics 985ms
+   ✓ Vibe Trader AI App — Phase 2 & Technical Analysis Views > navigates to Settings view and loads user preferences 578ms
+   ✓ Vibe Trader AI App — Phase 2 & Technical Analysis Views > navigates to Strategy Lab view and renders strategy cards 486ms
+   ✓ Vibe Trader AI App — Phase 2 & Technical Analysis Views > navigates to Paper Trading view and displays active orders 590ms
+   ✓ Vibe Trader AI App — Phase 2 & Technical Analysis Views > navigates to Trade Journal view and renders entries 391ms
+   ✓ Vibe Trader AI App — Phase 2 & Technical Analysis Views > navigates to Technical Analysis Studio and displays indicators and patterns 446ms
+   ✓ Vibe Trader AI App — Phase 2 & Technical Analysis Views > navigates to BUY Approval Center and renders human approval gates 332ms
+   ✓ Vibe Trader AI App — Phase 2 & Technical Analysis Views > navigates to Open Positions and renders autonomous exit status 534ms
+   ✓ Vibe Trader AI App — Phase 2 & Technical Analysis Views > navigates to Vibe Intelligence Core view and renders multi-agent architecture 349ms
+   ✓ Vibe Trader AI App — Phase 2 & Technical Analysis Views > navigates to Broker connection view and verifies fail-closed live order shield 311ms
+   ✓ Vibe Trader AI App — Phase 2 & Technical Analysis Views > navigates to AI Reasoning view and verifies hallucination defense panel 328ms
+   ✓ Vibe Trader AI App — Phase 2 & Technical Analysis Views > displays WelcomeOnboardingModal on first visit when not dismissed and dismisses on start paper trading 1139ms
+   ✓ Vibe Trader AI App — Phase 2 & Technical Analysis Views > renders signal cards in BUY Approval Center with approval modal gate 1404ms
+
+ Test Files  5 passed (5)
+      Tests  45 passed (45)
+   Start at  16:25:17
+   Duration  27.55s (transform 11.86s, setup 5.53s, collect 23.65s, tests 19.73s, environment 22.52s, prepare 9.66s)
+

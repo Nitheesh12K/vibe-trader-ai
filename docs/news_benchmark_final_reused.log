@@ -1,0 +1,22 @@
+Chat 1: 25390.96ms, fallback=False
+Chat 2: 1476.42ms, fallback=True
+Chat 3: 1457.59ms, fallback=True
+{
+  "provider_miss": null,
+  "provider_hit": null,
+  "qwen_stage": {
+    "runs": 3,
+    "median_ms": 1433.77,
+    "p95_ms": 25084.1
+  },
+  "model_total": {
+    "runs": 1,
+    "median_ms": 23853.84,
+    "p95_ms": 23853.84
+  },
+  "chat_http_roundtrip": {
+    "runs": 3,
+    "median_ms": 1476.42,
+    "p95_ms": 25390.96
+  }
+}

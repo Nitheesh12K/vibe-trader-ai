@@ -1,0 +1,114 @@
+{
+  "git_available": false,
+  "note": "Six original files were snapshotted before edits. The UI test baseline was reconstructed by removing only the known Phase 7 insertion/import; no Git ancestry is available. Logs, JSON benchmarks, screenshots and isolated SQLite/snapshot files are additional validation artifacts.",
+  "files": [
+    {
+      "file": "backend/app/core/config.py",
+      "kind": "modified",
+      "added": 9,
+      "removed": 1
+    },
+    {
+      "file": "backend/app/schemas/chat_assistant.py",
+      "kind": "modified",
+      "added": 3,
+      "removed": 0
+    },
+    {
+      "file": "backend/app/services/market_assistant_service.py",
+      "kind": "modified",
+      "added": 128,
+      "removed": 9
+    },
+    {
+      "file": "frontend/src/types/market.ts",
+      "kind": "modified",
+      "added": 31,
+      "removed": 0
+    },
+    {
+      "file": "frontend/src/components/assistant/MarketAssistantChat.tsx",
+      "kind": "modified",
+      "added": 19,
+      "removed": 5
+    },
+    {
+      "file": ".env.example",
+      "kind": "modified",
+      "added": 9,
+      "removed": 0
+    },
+    {
+      "file": "frontend/src/MarketAssistantChat.test.tsx",
+      "kind": "modified",
+      "added": 43,
+      "removed": 0
+    },
+    {
+      "file": "backend/app/schemas/news.py",
+      "kind": "created",
+      "added": 53,
+      "removed": 0
+    },
+    {
+      "file": "backend/app/services/news_intent.py",
+      "kind": "created",
+      "added": 59,
+      "removed": 0
+    },
+    {
+      "file": "backend/app/services/news_service.py",
+      "kind": "created",
+      "added": 224,
+      "removed": 0
+    },
+    {
+      "file": "frontend/src/components/assistant/NewsSources.tsx",
+      "kind": "created",
+      "added": 35,
+      "removed": 0
+    },
+    {
+      "file": "frontend/src/NewsSources.test.tsx",
+      "kind": "created",
+      "added": 48,
+      "removed": 0
+    },
+    {
+      "file": "tests/backend/test_news_integration.py",
+      "kind": "created",
+      "added": 314,
+      "removed": 0
+    },
+    {
+      "file": "scripts/benchmark_news.py",
+      "kind": "created",
+      "added": 81,
+      "removed": 0
+    },
+    {
+      "file": "scripts/probe_news_model.py",
+      "kind": "created",
+      "added": 33,
+      "removed": 0
+    },
+    {
+      "file": "docs/CURRENT_NEWS_INTEGRATION.md",
+      "kind": "created",
+      "added": 66,
+      "removed": 0
+    },
+    {
+      "file": "docs/NEWS_SOURCE_AND_FRESHNESS.md",
+      "kind": "created",
+      "added": 27,
+      "removed": 0
+    },
+    {
+      "file": "docs/NEWS_INTEGRATION_TEST_REPORT.md",
+      "kind": "created",
+      "added": 97,
+      "removed": 0
+    }
+  ]
+}

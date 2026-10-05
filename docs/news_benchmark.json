@@ -1,0 +1,612 @@
+{
+  "checked_at": "2026-10-04T12:20:21.953327+00:00",
+  "hardware": {
+    "platform": "Windows-11-10.0.22631-SP0",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "logical_cpus": 12
+  },
+  "provider": "ollama_local",
+  "provider_misses": [
+    {
+      "status": "OK",
+      "provider": "ollama_local",
+      "query": "NIFTY Indian stock market latest news 2026-10-04",
+      "articles": [
+        {
+          "title": "After Nifty’s longest losing streak in 25 years, what should investors do now? - The Economic Times",
+          "publisher": "The Economic Times",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/afterniftys-longest-losing-streak-in-25-years-what-should-investors-do-now/articleshow/134670772.cms",
+          "published_at": "2026-10-04T06:37:00Z",
+          "retrieved_at": "2026-10-04T12:20:23.922450Z",
+          "snippet": "After Nifty’s longest weekly losing streak in 25 years, analysts advise caution as the index trades below its 200-week moving average. The 22,600 level remains crucial, with further downside possible if Nifty fails to reclaim it decisively. Agencies Nifty’s longest losing streak in 25 years has pushed the benchmark into a critical technical zone, leaving investors to decide whether the sell-off is nearing exhaustion or has further to run. The index has breached its 200-week moving average and sl",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        },
+        {
+          "title": "Nifty Outlook for October 5: 8-week losing streak puts focus on RBI policy, earnings and global yields - CNBC TV18",
+          "publisher": "CNBC TV18",
+          "url": "https://www.cnbctv18.com/market/nifty-outlook-monday-october-5-eight-week-losing-streak-puts-focus-on-rbi-policy-earnings-and-global-yields-20004036.htm",
+          "published_at": "2026-10-04T04:08:29Z",
+          "retrieved_at": "2026-10-04T12:20:23.922450Z",
+          "snippet": "Indian equities could remain under pressure in the near term as elevated US Treasury yields, firm crude oil prices and continued foreign outflows weigh on sentiment. The upcoming RBI policy, GST Council meeting and earnings season will be key triggers for the market, while 22,200 remains a crucial support level. By Meghna Sen October 4, 2026, 9:38:29 AM IST (Published) Indian equities ended lower on Thursday, with sentiment hit by rising US Treasury yields and firm crude oil prices. The Nifty ex",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        }
+      ],
+      "checked_at": "2026-10-04T12:20:23.922450Z",
+      "cache_hit": false,
+      "context_reused": false,
+      "retrieval_ms": 1195.32,
+      "max_age_hours": 72,
+      "rejected_results": 3,
+      "notice": "Search excerpts only; full article contents have not been independently verified.",
+      "summary": "",
+      "possible_market_implications": "",
+      "model_metrics": {}
+    },
+    {
+      "status": "OK",
+      "provider": "ollama_local",
+      "query": "NIFTY Indian stock market latest news 2026-10-04",
+      "articles": [
+        {
+          "title": "After Nifty’s longest losing streak in 25 years, what should investors do now? - The Economic Times",
+          "publisher": "The Economic Times",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/afterniftys-longest-losing-streak-in-25-years-what-should-investors-do-now/articleshow/134670772.cms",
+          "published_at": "2026-10-04T06:37:00Z",
+          "retrieved_at": "2026-10-04T12:20:24.906161Z",
+          "snippet": "After Nifty’s longest weekly losing streak in 25 years, analysts advise caution as the index trades below its 200-week moving average. The 22,600 level remains crucial, with further downside possible if Nifty fails to reclaim it decisively. Agencies Nifty’s longest losing streak in 25 years has pushed the benchmark into a critical technical zone, leaving investors to decide whether the sell-off is nearing exhaustion or has further to run. The index has breached its 200-week moving average and sl",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        },
+        {
+          "title": "Nifty Outlook for October 5: 8-week losing streak puts focus on RBI policy, earnings and global yields - CNBC TV18",
+          "publisher": "CNBC TV18",
+          "url": "https://www.cnbctv18.com/market/nifty-outlook-monday-october-5-eight-week-losing-streak-puts-focus-on-rbi-policy-earnings-and-global-yields-20004036.htm",
+          "published_at": "2026-10-04T04:08:29Z",
+          "retrieved_at": "2026-10-04T12:20:24.906161Z",
+          "snippet": "Indian equities could remain under pressure in the near term as elevated US Treasury yields, firm crude oil prices and continued foreign outflows weigh on sentiment. The upcoming RBI policy, GST Council meeting and earnings season will be key triggers for the market, while 22,200 remains a crucial support level. By Meghna Sen October 4, 2026, 9:38:29 AM IST (Published) Indian equities ended lower on Thursday, with sentiment hit by rising US Treasury yields and firm crude oil prices. The Nifty ex",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        }
+      ],
+      "checked_at": "2026-10-04T12:20:24.906161Z",
+      "cache_hit": false,
+      "context_reused": false,
+      "retrieval_ms": 978.31,
+      "max_age_hours": 72,
+      "rejected_results": 3,
+      "notice": "Search excerpts only; full article contents have not been independently verified.",
+      "summary": "",
+      "possible_market_implications": "",
+      "model_metrics": {}
+    },
+    {
+      "status": "OK",
+      "provider": "ollama_local",
+      "query": "NIFTY Indian stock market latest news 2026-10-04",
+      "articles": [
+        {
+          "title": "After Nifty’s longest losing streak in 25 years, what should investors do now? - The Economic Times",
+          "publisher": "The Economic Times",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/afterniftys-longest-losing-streak-in-25-years-what-should-investors-do-now/articleshow/134670772.cms",
+          "published_at": "2026-10-04T06:37:00Z",
+          "retrieved_at": "2026-10-04T12:20:25.811519Z",
+          "snippet": "After Nifty’s longest weekly losing streak in 25 years, analysts advise caution as the index trades below its 200-week moving average. The 22,600 level remains crucial, with further downside possible if Nifty fails to reclaim it decisively. Agencies Nifty’s longest losing streak in 25 years has pushed the benchmark into a critical technical zone, leaving investors to decide whether the sell-off is nearing exhaustion or has further to run. The index has breached its 200-week moving average and sl",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        },
+        {
+          "title": "Nifty Outlook for October 5: 8-week losing streak puts focus on RBI policy, earnings and global yields - CNBC TV18",
+          "publisher": "CNBC TV18",
+          "url": "https://www.cnbctv18.com/market/nifty-outlook-monday-october-5-eight-week-losing-streak-puts-focus-on-rbi-policy-earnings-and-global-yields-20004036.htm",
+          "published_at": "2026-10-04T04:08:29Z",
+          "retrieved_at": "2026-10-04T12:20:25.811519Z",
+          "snippet": "Indian equities could remain under pressure in the near term as elevated US Treasury yields, firm crude oil prices and continued foreign outflows weigh on sentiment. The upcoming RBI policy, GST Council meeting and earnings season will be key triggers for the market, while 22,200 remains a crucial support level. By Meghna Sen October 4, 2026, 9:38:29 AM IST (Published) Indian equities ended lower on Thursday, with sentiment hit by rising US Treasury yields and firm crude oil prices. The Nifty ex",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        }
+      ],
+      "checked_at": "2026-10-04T12:20:25.811519Z",
+      "cache_hit": false,
+      "context_reused": false,
+      "retrieval_ms": 904.8,
+      "max_age_hours": 72,
+      "rejected_results": 3,
+      "notice": "Search excerpts only; full article contents have not been independently verified.",
+      "summary": "",
+      "possible_market_implications": "",
+      "model_metrics": {}
+    },
+    {
+      "status": "OK",
+      "provider": "ollama_local",
+      "query": "NIFTY Indian stock market latest news 2026-10-04",
+      "articles": [
+        {
+          "title": "After Nifty’s longest losing streak in 25 years, what should investors do now? - The Economic Times",
+          "publisher": "The Economic Times",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/afterniftys-longest-losing-streak-in-25-years-what-should-investors-do-now/articleshow/134670772.cms",
+          "published_at": "2026-10-04T06:37:00Z",
+          "retrieved_at": "2026-10-04T12:20:26.706679Z",
+          "snippet": "After Nifty’s longest weekly losing streak in 25 years, analysts advise caution as the index trades below its 200-week moving average. The 22,600 level remains crucial, with further downside possible if Nifty fails to reclaim it decisively. Agencies Nifty’s longest losing streak in 25 years has pushed the benchmark into a critical technical zone, leaving investors to decide whether the sell-off is nearing exhaustion or has further to run. The index has breached its 200-week moving average and sl",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        },
+        {
+          "title": "Nifty Outlook for October 5: 8-week losing streak puts focus on RBI policy, earnings and global yields - CNBC TV18",
+          "publisher": "CNBC TV18",
+          "url": "https://www.cnbctv18.com/market/nifty-outlook-monday-october-5-eight-week-losing-streak-puts-focus-on-rbi-policy-earnings-and-global-yields-20004036.htm",
+          "published_at": "2026-10-04T04:08:29Z",
+          "retrieved_at": "2026-10-04T12:20:26.706679Z",
+          "snippet": "Indian equities could remain under pressure in the near term as elevated US Treasury yields, firm crude oil prices and continued foreign outflows weigh on sentiment. The upcoming RBI policy, GST Council meeting and earnings season will be key triggers for the market, while 22,200 remains a crucial support level. By Meghna Sen October 4, 2026, 9:38:29 AM IST (Published) Indian equities ended lower on Thursday, with sentiment hit by rising US Treasury yields and firm crude oil prices. The Nifty ex",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        }
+      ],
+      "checked_at": "2026-10-04T12:20:26.706679Z",
+      "cache_hit": false,
+      "context_reused": false,
+      "retrieval_ms": 895.83,
+      "max_age_hours": 72,
+      "rejected_results": 3,
+      "notice": "Search excerpts only; full article contents have not been independently verified.",
+      "summary": "",
+      "possible_market_implications": "",
+      "model_metrics": {}
+    },
+    {
+      "status": "OK",
+      "provider": "ollama_local",
+      "query": "NIFTY Indian stock market latest news 2026-10-04",
+      "articles": [
+        {
+          "title": "After Nifty’s longest losing streak in 25 years, what should investors do now? - The Economic Times",
+          "publisher": "The Economic Times",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/afterniftys-longest-losing-streak-in-25-years-what-should-investors-do-now/articleshow/134670772.cms",
+          "published_at": "2026-10-04T06:37:00Z",
+          "retrieved_at": "2026-10-04T12:20:28.394231Z",
+          "snippet": "After Nifty’s longest weekly losing streak in 25 years, analysts advise caution as the index trades below its 200-week moving average. The 22,600 level remains crucial, with further downside possible if Nifty fails to reclaim it decisively. Agencies Nifty’s longest losing streak in 25 years has pushed the benchmark into a critical technical zone, leaving investors to decide whether the sell-off is nearing exhaustion or has further to run. The index has breached its 200-week moving average and sl",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        },
+        {
+          "title": "Nifty Outlook for October 5: 8-week losing streak puts focus on RBI policy, earnings and global yields - CNBC TV18",
+          "publisher": "CNBC TV18",
+          "url": "https://www.cnbctv18.com/market/nifty-outlook-monday-october-5-eight-week-losing-streak-puts-focus-on-rbi-policy-earnings-and-global-yields-20004036.htm",
+          "published_at": "2026-10-04T04:08:29Z",
+          "retrieved_at": "2026-10-04T12:20:28.394231Z",
+          "snippet": "Indian equities could remain under pressure in the near term as elevated US Treasury yields, firm crude oil prices and continued foreign outflows weigh on sentiment. The upcoming RBI policy, GST Council meeting and earnings season will be key triggers for the market, while 22,200 remains a crucial support level. By Meghna Sen October 4, 2026, 9:38:29 AM IST (Published) Indian equities ended lower on Thursday, with sentiment hit by rising US Treasury yields and firm crude oil prices. The Nifty ex",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        }
+      ],
+      "checked_at": "2026-10-04T12:20:28.394231Z",
+      "cache_hit": false,
+      "context_reused": false,
+      "retrieval_ms": 1684.01,
+      "max_age_hours": 72,
+      "rejected_results": 3,
+      "notice": "Search excerpts only; full article contents have not been independently verified.",
+      "summary": "",
+      "possible_market_implications": "",
+      "model_metrics": {}
+    }
+  ],
+  "provider_hits": [
+    {
+      "status": "OK",
+      "provider": "ollama_local",
+      "query": "NIFTY Indian stock market latest news 2026-10-04",
+      "articles": [
+        {
+          "title": "After Nifty’s longest losing streak in 25 years, what should investors do now? - The Economic Times",
+          "publisher": "The Economic Times",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/afterniftys-longest-losing-streak-in-25-years-what-should-investors-do-now/articleshow/134670772.cms",
+          "published_at": "2026-10-04T06:37:00Z",
+          "retrieved_at": "2026-10-04T12:20:23.922450Z",
+          "snippet": "After Nifty’s longest weekly losing streak in 25 years, analysts advise caution as the index trades below its 200-week moving average. The 22,600 level remains crucial, with further downside possible if Nifty fails to reclaim it decisively. Agencies Nifty’s longest losing streak in 25 years has pushed the benchmark into a critical technical zone, leaving investors to decide whether the sell-off is nearing exhaustion or has further to run. The index has breached its 200-week moving average and sl",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        },
+        {
+          "title": "Nifty Outlook for October 5: 8-week losing streak puts focus on RBI policy, earnings and global yields - CNBC TV18",
+          "publisher": "CNBC TV18",
+          "url": "https://www.cnbctv18.com/market/nifty-outlook-monday-october-5-eight-week-losing-streak-puts-focus-on-rbi-policy-earnings-and-global-yields-20004036.htm",
+          "published_at": "2026-10-04T04:08:29Z",
+          "retrieved_at": "2026-10-04T12:20:23.922450Z",
+          "snippet": "Indian equities could remain under pressure in the near term as elevated US Treasury yields, firm crude oil prices and continued foreign outflows weigh on sentiment. The upcoming RBI policy, GST Council meeting and earnings season will be key triggers for the market, while 22,200 remains a crucial support level. By Meghna Sen October 4, 2026, 9:38:29 AM IST (Published) Indian equities ended lower on Thursday, with sentiment hit by rising US Treasury yields and firm crude oil prices. The Nifty ex",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        }
+      ],
+      "checked_at": "2026-10-04T12:20:23.927464Z",
+      "cache_hit": true,
+      "context_reused": false,
+      "retrieval_ms": 0.32,
+      "max_age_hours": 72,
+      "rejected_results": 3,
+      "notice": "Search excerpts only; full article contents have not been independently verified.",
+      "summary": "",
+      "possible_market_implications": "",
+      "model_metrics": {}
+    },
+    {
+      "status": "OK",
+      "provider": "ollama_local",
+      "query": "NIFTY Indian stock market latest news 2026-10-04",
+      "articles": [
+        {
+          "title": "After Nifty’s longest losing streak in 25 years, what should investors do now? - The Economic Times",
+          "publisher": "The Economic Times",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/afterniftys-longest-losing-streak-in-25-years-what-should-investors-do-now/articleshow/134670772.cms",
+          "published_at": "2026-10-04T06:37:00Z",
+          "retrieved_at": "2026-10-04T12:20:24.906161Z",
+          "snippet": "After Nifty’s longest weekly losing streak in 25 years, analysts advise caution as the index trades below its 200-week moving average. The 22,600 level remains crucial, with further downside possible if Nifty fails to reclaim it decisively. Agencies Nifty’s longest losing streak in 25 years has pushed the benchmark into a critical technical zone, leaving investors to decide whether the sell-off is nearing exhaustion or has further to run. The index has breached its 200-week moving average and sl",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        },
+        {
+          "title": "Nifty Outlook for October 5: 8-week losing streak puts focus on RBI policy, earnings and global yields - CNBC TV18",
+          "publisher": "CNBC TV18",
+          "url": "https://www.cnbctv18.com/market/nifty-outlook-monday-october-5-eight-week-losing-streak-puts-focus-on-rbi-policy-earnings-and-global-yields-20004036.htm",
+          "published_at": "2026-10-04T04:08:29Z",
+          "retrieved_at": "2026-10-04T12:20:24.906161Z",
+          "snippet": "Indian equities could remain under pressure in the near term as elevated US Treasury yields, firm crude oil prices and continued foreign outflows weigh on sentiment. The upcoming RBI policy, GST Council meeting and earnings season will be key triggers for the market, while 22,200 remains a crucial support level. By Meghna Sen October 4, 2026, 9:38:29 AM IST (Published) Indian equities ended lower on Thursday, with sentiment hit by rising US Treasury yields and firm crude oil prices. The Nifty ex",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        }
+      ],
+      "checked_at": "2026-10-04T12:20:24.907730Z",
+      "cache_hit": true,
+      "context_reused": false,
+      "retrieval_ms": 0.08,
+      "max_age_hours": 72,
+      "rejected_results": 3,
+      "notice": "Search excerpts only; full article contents have not been independently verified.",
+      "summary": "",
+      "possible_market_implications": "",
+      "model_metrics": {}
+    },
+    {
+      "status": "OK",
+      "provider": "ollama_local",
+      "query": "NIFTY Indian stock market latest news 2026-10-04",
+      "articles": [
+        {
+          "title": "After Nifty’s longest losing streak in 25 years, what should investors do now? - The Economic Times",
+          "publisher": "The Economic Times",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/afterniftys-longest-losing-streak-in-25-years-what-should-investors-do-now/articleshow/134670772.cms",
+          "published_at": "2026-10-04T06:37:00Z",
+          "retrieved_at": "2026-10-04T12:20:25.811519Z",
+          "snippet": "After Nifty’s longest weekly losing streak in 25 years, analysts advise caution as the index trades below its 200-week moving average. The 22,600 level remains crucial, with further downside possible if Nifty fails to reclaim it decisively. Agencies Nifty’s longest losing streak in 25 years has pushed the benchmark into a critical technical zone, leaving investors to decide whether the sell-off is nearing exhaustion or has further to run. The index has breached its 200-week moving average and sl",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        },
+        {
+          "title": "Nifty Outlook for October 5: 8-week losing streak puts focus on RBI policy, earnings and global yields - CNBC TV18",
+          "publisher": "CNBC TV18",
+          "url": "https://www.cnbctv18.com/market/nifty-outlook-monday-october-5-eight-week-losing-streak-puts-focus-on-rbi-policy-earnings-and-global-yields-20004036.htm",
+          "published_at": "2026-10-04T04:08:29Z",
+          "retrieved_at": "2026-10-04T12:20:25.811519Z",
+          "snippet": "Indian equities could remain under pressure in the near term as elevated US Treasury yields, firm crude oil prices and continued foreign outflows weigh on sentiment. The upcoming RBI policy, GST Council meeting and earnings season will be key triggers for the market, while 22,200 remains a crucial support level. By Meghna Sen October 4, 2026, 9:38:29 AM IST (Published) Indian equities ended lower on Thursday, with sentiment hit by rising US Treasury yields and firm crude oil prices. The Nifty ex",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        }
+      ],
+      "checked_at": "2026-10-04T12:20:25.813533Z",
+      "cache_hit": true,
+      "context_reused": false,
+      "retrieval_ms": 0.08,
+      "max_age_hours": 72,
+      "rejected_results": 3,
+      "notice": "Search excerpts only; full article contents have not been independently verified.",
+      "summary": "",
+      "possible_market_implications": "",
+      "model_metrics": {}
+    },
+    {
+      "status": "OK",
+      "provider": "ollama_local",
+      "query": "NIFTY Indian stock market latest news 2026-10-04",
+      "articles": [
+        {
+          "title": "After Nifty’s longest losing streak in 25 years, what should investors do now? - The Economic Times",
+          "publisher": "The Economic Times",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/afterniftys-longest-losing-streak-in-25-years-what-should-investors-do-now/articleshow/134670772.cms",
+          "published_at": "2026-10-04T06:37:00Z",
+          "retrieved_at": "2026-10-04T12:20:26.706679Z",
+          "snippet": "After Nifty’s longest weekly losing streak in 25 years, analysts advise caution as the index trades below its 200-week moving average. The 22,600 level remains crucial, with further downside possible if Nifty fails to reclaim it decisively. Agencies Nifty’s longest losing streak in 25 years has pushed the benchmark into a critical technical zone, leaving investors to decide whether the sell-off is nearing exhaustion or has further to run. The index has breached its 200-week moving average and sl",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        },
+        {
+          "title": "Nifty Outlook for October 5: 8-week losing streak puts focus on RBI policy, earnings and global yields - CNBC TV18",
+          "publisher": "CNBC TV18",
+          "url": "https://www.cnbctv18.com/market/nifty-outlook-monday-october-5-eight-week-losing-streak-puts-focus-on-rbi-policy-earnings-and-global-yields-20004036.htm",
+          "published_at": "2026-10-04T04:08:29Z",
+          "retrieved_at": "2026-10-04T12:20:26.706679Z",
+          "snippet": "Indian equities could remain under pressure in the near term as elevated US Treasury yields, firm crude oil prices and continued foreign outflows weigh on sentiment. The upcoming RBI policy, GST Council meeting and earnings season will be key triggers for the market, while 22,200 remains a crucial support level. By Meghna Sen October 4, 2026, 9:38:29 AM IST (Published) Indian equities ended lower on Thursday, with sentiment hit by rising US Treasury yields and firm crude oil prices. The Nifty ex",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        }
+      ],
+      "checked_at": "2026-10-04T12:20:26.711282Z",
+      "cache_hit": true,
+      "context_reused": false,
+      "retrieval_ms": 0.22,
+      "max_age_hours": 72,
+      "rejected_results": 3,
+      "notice": "Search excerpts only; full article contents have not been independently verified.",
+      "summary": "",
+      "possible_market_implications": "",
+      "model_metrics": {}
+    },
+    {
+      "status": "OK",
+      "provider": "ollama_local",
+      "query": "NIFTY Indian stock market latest news 2026-10-04",
+      "articles": [
+        {
+          "title": "After Nifty’s longest losing streak in 25 years, what should investors do now? - The Economic Times",
+          "publisher": "The Economic Times",
+          "url": "https://economictimes.indiatimes.com/markets/stocks/news/afterniftys-longest-losing-streak-in-25-years-what-should-investors-do-now/articleshow/134670772.cms",
+          "published_at": "2026-10-04T06:37:00Z",
+          "retrieved_at": "2026-10-04T12:20:28.394231Z",
+          "snippet": "After Nifty’s longest weekly losing streak in 25 years, analysts advise caution as the index trades below its 200-week moving average. The 22,600 level remains crucial, with further downside possible if Nifty fails to reclaim it decisively. Agencies Nifty’s longest losing streak in 25 years has pushed the benchmark into a critical technical zone, leaving investors to decide whether the sell-off is nearing exhaustion or has further to run. The index has breached its 200-week moving average and sl",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        },
+        {
+          "title": "Nifty Outlook for October 5: 8-week losing streak puts focus on RBI policy, earnings and global yields - CNBC TV18",
+          "publisher": "CNBC TV18",
+          "url": "https://www.cnbctv18.com/market/nifty-outlook-monday-october-5-eight-week-losing-streak-puts-focus-on-rbi-policy-earnings-and-global-yields-20004036.htm",
+          "published_at": "2026-10-04T04:08:29Z",
+          "retrieved_at": "2026-10-04T12:20:28.394231Z",
+          "snippet": "Indian equities could remain under pressure in the near term as elevated US Treasury yields, firm crude oil prices and continued foreign outflows weigh on sentiment. The upcoming RBI policy, GST Council meeting and earnings season will be key triggers for the market, while 22,200 remains a crucial support level. By Meghna Sen October 4, 2026, 9:38:29 AM IST (Published) Indian equities ended lower on Thursday, with sentiment hit by rising US Treasury yields and firm crude oil prices. The Nifty ex",
+          "provider": "ollama_local",
+          "evidence_type": "SEARCH_EXCERPT"
+        }
+      ],
+      "checked_at": "2026-10-04T12:20:28.396745Z",
+      "cache_hit": true,
+      "context_reused": false,
+      "retrieval_ms": 0.09,
+      "max_age_hours": 72,
+      "rejected_results": 3,
+      "notice": "Search excerpts only; full article contents have not been independently verified.",
+      "summary": "",
+      "possible_market_implications": "",
+      "model_metrics": {}
+    }
+  ],
+  "chat": [
+    {
+      "message_id": "msg-asst-76c588626b67",
+      "session_id": "phase7-news-benchmark-0",
+      "role": "assistant",
+      "content": "News retrieval is unavailable. I cannot verify current news. Check the news provider connection/configuration and retry.",
+      "sources": [
+        {
+          "tool_name": "NewsTool",
+          "symbol": null,
+          "market": null,
+          "timeframe": null,
+          "timestamp": "2026-10-04T12:20:28.561216+00:00",
+          "summary": "News provider unavailable. Check Ollama web-search sign-in/connectivity or the server-side provider configuration, then retry.",
+          "data_points": {
+            "status": "PROVIDER_ERROR",
+            "provider": "ollama_local",
+            "query": "NIFTY Indian stock market latest news 2026-10-04",
+            "articles": [],
+            "checked_at": "2026-10-04T12:20:28.561216Z",
+            "cache_hit": false,
+            "context_reused": false,
+            "retrieval_ms": 353.97,
+            "max_age_hours": 72,
+            "rejected_results": 0,
+            "notice": "News provider unavailable. Check Ollama web-search sign-in/connectivity or the server-side provider configuration, then retry.",
+            "summary": "",
+            "possible_market_implications": "",
+            "model_metrics": {}
+          }
+        }
+      ],
+      "news": {
+        "status": "PROVIDER_ERROR",
+        "provider": "ollama_local",
+        "query": "NIFTY Indian stock market latest news 2026-10-04",
+        "articles": [],
+        "checked_at": "2026-10-04T12:20:28.561216Z",
+        "cache_hit": false,
+        "context_reused": false,
+        "retrieval_ms": 353.97,
+        "max_age_hours": 72,
+        "rejected_results": 0,
+        "notice": "News provider unavailable. Check Ollama web-search sign-in/connectivity or the server-side provider configuration, then retry.",
+        "summary": "",
+        "possible_market_implications": "",
+        "model_metrics": {}
+      },
+      "symbol_context": null,
+      "market_context": null,
+      "timeframe_context": "1D",
+      "model_name": "BUILTIN_ASSISTANT",
+      "is_fallback": false,
+      "detected_language": "english",
+      "detected_intent": "NEWS_CURRENT",
+      "routing_time_ms": 0.75,
+      "tool_latency_ms": 354.52,
+      "inference_latency_ms": 0.31,
+      "total_latency_ms": 368.65,
+      "disclaimer": "AI Market Assistant output is strictly advisory and educational. It cannot place trades, alter risk limits, or bypass approvals. Paper trading only.",
+      "created_at": "2026-10-04T12:20:28.923475",
+      "http_roundtrip_ms": 537.11
+    },
+    {
+      "message_id": "msg-asst-f5943173f6d7",
+      "session_id": "phase7-news-benchmark-1",
+      "role": "assistant",
+      "content": "News retrieval is unavailable. I cannot verify current news. Check the news provider connection/configuration and retry.",
+      "sources": [
+        {
+          "tool_name": "NewsTool",
+          "symbol": null,
+          "market": null,
+          "timeframe": null,
+          "timestamp": "2026-10-04T12:20:28.943511+00:00",
+          "summary": "News provider unavailable. Check Ollama web-search sign-in/connectivity or the server-side provider configuration, then retry.",
+          "data_points": {
+            "status": "PROVIDER_ERROR",
+            "provider": "ollama_local",
+            "query": "NIFTY Indian stock market latest news 2026-10-04",
+            "articles": [],
+            "checked_at": "2026-10-04T12:20:28.943511Z",
+            "cache_hit": false,
+            "context_reused": false,
+            "retrieval_ms": 338.39,
+            "max_age_hours": 72,
+            "rejected_results": 0,
+            "notice": "News provider unavailable. Check Ollama web-search sign-in/connectivity or the server-side provider configuration, then retry.",
+            "summary": "",
+            "possible_market_implications": "",
+            "model_metrics": {}
+          }
+        }
+      ],
+      "news": {
+        "status": "PROVIDER_ERROR",
+        "provider": "ollama_local",
+        "query": "NIFTY Indian stock market latest news 2026-10-04",
+        "articles": [],
+        "checked_at": "2026-10-04T12:20:28.943511Z",
+        "cache_hit": false,
+        "context_reused": false,
+        "retrieval_ms": 338.39,
+        "max_age_hours": 72,
+        "rejected_results": 0,
+        "notice": "News provider unavailable. Check Ollama web-search sign-in/connectivity or the server-side provider configuration, then retry.",
+        "summary": "",
+        "possible_market_implications": "",
+        "model_metrics": {}
+      },
+      "symbol_context": null,
+      "market_context": null,
+      "timeframe_context": "1D",
+      "model_name": "BUILTIN_ASSISTANT",
+      "is_fallback": false,
+      "detected_language": "english",
+      "detected_intent": "NEWS_CURRENT",
+      "routing_time_ms": 0.04,
+      "tool_latency_ms": 338.67,
+      "inference_latency_ms": 0.02,
+      "total_latency_ms": 349.23,
+      "disclaimer": "AI Market Assistant output is strictly advisory and educational. It cannot place trades, alter risk limits, or bypass approvals. Paper trading only.",
+      "created_at": "2026-10-04T12:20:29.291213",
+      "http_roundtrip_ms": 364.98
+    },
+    {
+      "message_id": "msg-asst-0e693a2a3a9f",
+      "session_id": "phase7-news-benchmark-2",
+      "role": "assistant",
+      "content": "News retrieval is unavailable. I cannot verify current news. Check the news provider connection/configuration and retry.",
+      "sources": [
+        {
+          "tool_name": "NewsTool",
+          "symbol": null,
+          "market": null,
+          "timeframe": null,
+          "timestamp": "2026-10-04T12:20:29.309357+00:00",
+          "summary": "News provider unavailable. Check Ollama web-search sign-in/connectivity or the server-side provider configuration, then retry.",
+          "data_points": {
+            "status": "PROVIDER_ERROR",
+            "provider": "ollama_local",
+            "query": "NIFTY Indian stock market latest news 2026-10-04",
+            "articles": [],
+            "checked_at": "2026-10-04T12:20:29.309357Z",
+            "cache_hit": false,
+            "context_reused": false,
+            "retrieval_ms": 343.3,
+            "max_age_hours": 72,
+            "rejected_results": 0,
+            "notice": "News provider unavailable. Check Ollama web-search sign-in/connectivity or the server-side provider configuration, then retry.",
+            "summary": "",
+            "possible_market_implications": "",
+            "model_metrics": {}
+          }
+        }
+      ],
+      "news": {
+        "status": "PROVIDER_ERROR",
+        "provider": "ollama_local",
+        "query": "NIFTY Indian stock market latest news 2026-10-04",
+        "articles": [],
+        "checked_at": "2026-10-04T12:20:29.309357Z",
+        "cache_hit": false,
+        "context_reused": false,
+        "retrieval_ms": 343.3,
+        "max_age_hours": 72,
+        "rejected_results": 0,
+        "notice": "News provider unavailable. Check Ollama web-search sign-in/connectivity or the server-side provider configuration, then retry.",
+        "summary": "",
+        "possible_market_implications": "",
+        "model_metrics": {}
+      },
+      "symbol_context": null,
+      "market_context": null,
+      "timeframe_context": "1D",
+      "model_name": "BUILTIN_ASSISTANT",
+      "is_fallback": false,
+      "detected_language": "english",
+      "detected_intent": "NEWS_CURRENT",
+      "routing_time_ms": 0.05,
+      "tool_latency_ms": 343.43,
+      "inference_latency_ms": 0.05,
+      "total_latency_ms": 351.0,
+      "disclaimer": "AI Market Assistant output is strictly advisory and educational. It cannot place trades, alter risk limits, or bypass approvals. Paper trading only.",
+      "created_at": "2026-10-04T12:20:29.658741",
+      "http_roundtrip_ms": 367.16
+    }
+  ],
+  "notes": "Real public news excerpts and real local Qwen. Already warmed model, no streaming/TTFT. p95 is nearest-rank, small sample, not a performance guarantee.",
+  "ollama_version": {
+    "version": "0.34.4"
+  },
+  "model_details": {
+    "parent_model": "Qwen3-4B-Q4_K_M.gguf",
+    "format": "gguf",
+    "family": "qwen3",
+    "families": [
+      "qwen3"
+    ],
+    "parameter_size": "4.0B",
+    "quantization_level": "Q4_K_M"
+  },
+  "routing": {
+    "runs": 1000,
+    "median_ms": 0.01,
+    "p95_ms": 0.02
+  },
+  "metrics": {
+    "provider_miss": {
+      "runs": 5,
+      "median_ms": 978.31,
+      "p95_ms": 1684.01
+    },
+    "provider_hit": {
+      "runs": 5,
+      "median_ms": 0.09,
+      "p95_ms": 0.32
+    },
+    "qwen_stage": {
+      "runs": 3,
+      "median_ms": 0.05,
+      "p95_ms": 0.31
+    },
+    "chat_http_roundtrip": {
+      "runs": 3,
+      "median_ms": 367.16,
+      "p95_ms": 537.11
+    }
+  }
+}

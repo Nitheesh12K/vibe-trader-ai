@@ -1,0 +1,30 @@
+Provider miss 1: OK, 1195.32ms
+Provider miss 2: OK, 978.31ms
+Provider miss 3: OK, 904.8ms
+Provider miss 4: OK, 895.83ms
+Provider miss 5: OK, 1684.01ms
+Chat 1: 537.11ms, fallback=False
+Chat 2: 364.98ms, fallback=False
+Chat 3: 367.16ms, fallback=False
+{
+  "provider_miss": {
+    "runs": 5,
+    "median_ms": 978.31,
+    "p95_ms": 1684.01
+  },
+  "provider_hit": {
+    "runs": 5,
+    "median_ms": 0.09,
+    "p95_ms": 0.32
+  },
+  "qwen_stage": {
+    "runs": 3,
+    "median_ms": 0.05,
+    "p95_ms": 0.31
+  },
+  "chat_http_roundtrip": {
+    "runs": 3,
+    "median_ms": 367.16,
+    "p95_ms": 537.11
+  }
+}

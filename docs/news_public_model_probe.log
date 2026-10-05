@@ -1,0 +1,6 @@
+Ollama inference failed or timed out: News numbers not supported by cited articles; triggering deterministic fallback.
+Local AI summary is unavailable. These are retrieved headlines only; no market-impact analysis was generated.
+
+- [1] After Nifty�s longest losing streak in 25 years, what should investors do now? - The Economic Times (The Economic Times; published 2026-10-04T06:37:00+00:00)
+- [2] Nifty Outlook for October 5: 8-week losing streak puts focus on RBI policy, earnings and global yields - CNBC TV18 (CNBC TV18; published 2026-10-04T04:08:29+00:00)
+fallback: True

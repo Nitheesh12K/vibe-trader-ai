@@ -1,0 +1,18 @@
+
+> vibe-trader-ai-frontend@0.1.0 build
+> tsc && vite build
+
+vite v5.4.21 building for production...
+transforming...
+✓ 1633 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   1.22 kB │ gzip:   0.68 kB
+dist/assets/index-Bl1xYryA.css   80.00 kB │ gzip:  12.88 kB
+dist/assets/index-CKUgLTjq.js   871.63 kB │ gzip: 208.64 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 7.82s

@@ -1,0 +1,202 @@
+2026-10-04 18:21:22,159 [DEBUG] asyncio: Using proactor: IocpProactor
+INFO:     Started server process [56852]
+INFO:     Waiting for application startup.
+2026-10-04 18:21:22,202 [INFO] vibe-trader-ai: Starting up Vibe Trader AI backend...
+2026-10-04 18:21:22,202 [INFO] vibe-trader-ai: Environment: development
+2026-10-04 18:21:22,202 [INFO] vibe-trader-ai: Configured CORS origins: ['http://localhost:5173', 'http://127.0.0.1:5173']
+2026-10-04 18:21:22,310 [INFO] vibe-trader-ai: Database initialized successfully.
+2026-10-04 18:21:22,311 [INFO] vibe-trader-ai: Triggered asynchronous background warm-up for local Qwen model.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-10-04 18:21:22,610 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=45.0 socket_options=None
+2026-10-04 18:21:22,614 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C368E744D0>
+2026-10-04 18:21:22,615 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'POST']>
+2026-10-04 18:21:22,615 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:21:22,616 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'POST']>
+2026-10-04 18:21:22,616 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:21:22,616 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'POST']>
+2026-10-04 18:21:22,624 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:51:22 GMT'), (b'Content-Length', b'121')])
+2026-10-04 18:21:22,625 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-10-04 18:21:22,625 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'POST']>
+2026-10-04 18:21:22,625 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:21:22,625 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:21:22,625 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:21:22,625 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:21:22,625 [DEBUG] httpcore.connection: close.complete
+2026-10-04 18:21:22,625 [INFO] vibe-trader-ai.market_assistant: Ollama model qwen3-local:latest preloaded into RAM.
+INFO:     127.0.0.1:65239 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54028 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+2026-10-04 18:21:32,925 [DEBUG] httpcore.connection: connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=0.5 socket_options=None
+2026-10-04 18:21:32,927 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C369201A60>
+2026-10-04 18:21:32,927 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+2026-10-04 18:21:32,927 [DEBUG] httpcore.http11: send_request_headers.complete
+2026-10-04 18:21:32,928 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+2026-10-04 18:21:32,928 [DEBUG] httpcore.http11: send_request_body.complete
+2026-10-04 18:21:32,928 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+2026-10-04 18:21:32,948 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 04 Oct 2026 12:51:32 GMT'), (b'Content-Length', b'1370')])
+2026-10-04 18:21:32,948 [INFO] httpx: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-10-04 18:21:32,948 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+2026-10-04 18:21:32,949 [DEBUG] httpcore.http11: receive_response_body.complete
+2026-10-04 18:21:32,949 [DEBUG] httpcore.http11: response_closed.started
+2026-10-04 18:21:32,950 [DEBUG] httpcore.http11: response_closed.complete
+2026-10-04 18:21:32,950 [DEBUG] httpcore.connection: close.started
+2026-10-04 18:21:32,951 [DEBUG] httpcore.connection: close.complete
+INFO:     127.0.0.1:54029 - "GET /api/assistant/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61456 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63928 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60322 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64486 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51687 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65519 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56414 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52335 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52093 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63386 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52362 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63227 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57877 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55712 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64141 - "OPTIONS /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56365 - "OPTIONS /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56365 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64141 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63414 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54043 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57623 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56149 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64450 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49667 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49667 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56714 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49304 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50462 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56016 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55003 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59710 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60090 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63041 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65158 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58087 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62920 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49199 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61876 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60748 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64540 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65250 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49294 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58753 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61967 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63788 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64752 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59718 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50876 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57004 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54305 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58820 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65363 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63687 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51902 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55034 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56003 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50940 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53779 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62336 - "OPTIONS /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52055 - "OPTIONS /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52055 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62336 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60525 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64791 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64416 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61836 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56682 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64227 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60062 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64527 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51310 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64558 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54308 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50941 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63641 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59905 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63491 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50330 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55561 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64248 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59531 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56241 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57560 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59949 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50772 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63392 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62443 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49328 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63565 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60097 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53008 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54249 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60955 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52791 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56337 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57210 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52004 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56277 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58030 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65119 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60585 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63268 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57635 - "OPTIONS /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54996 - "OPTIONS /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54996 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57635 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59499 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55802 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63315 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60474 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52554 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49972 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53068 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64069 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49733 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57079 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58890 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50699 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61435 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60055 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57496 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64494 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58160 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55133 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60714 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57364 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57862 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53396 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56658 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64401 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62904 - "OPTIONS /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52721 - "OPTIONS /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52721 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62904 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53233 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61093 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65324 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50881 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56581 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52360 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61167 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57783 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54651 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54019 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63708 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58347 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51745 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57054 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61566 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53491 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52662 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51195 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53356 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51364 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50769 - "OPTIONS /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52036 - "OPTIONS /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52036 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50769 - "GET /api/alerts/events?unread_only=true HTTP/1.1" 200 OK
